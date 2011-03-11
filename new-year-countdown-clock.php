@@ -23,8 +23,6 @@ function new_year_countdown_clock_init()
     	$options = $newoptions;
 	$options_flag=0;
 
-	//	$group_list[$group_name]['group_code']
-
 	$file_location = dirname(__FILE__)."/group_list.ser"; 
 	if ($fd = fopen($file_location,'r')){
 		$group_list_ser = fread($fd,filesize($file_location));
@@ -237,10 +235,8 @@ print "<br> TZ: " . $timezone;
 	//	Title header option	
 	if($countdown)
 		$title = UCWords($countdown) . " Countdown";
-	elseif($countdown_name)
-		$title = $countdown_name . " Countdown";
-	elseif($group_name)
-		$title = $group_name . " Countdown";
+	elseif($group)
+		$title = $group . " Countdown";
 
         echo '<label for="new-year-countdown-clock-title"> <input type="hidden" id="new-year-countdown-clock-title" name="new-year-countdown-clock-title" value="'.$title.'" /> </label>';
 
@@ -321,9 +317,9 @@ print "<br> TZ: " . $timezone;
 	// Output Clock
 
 
-	$target_url= "http://mycountdown.org/$group_name/";
-	if ($countdown_name)
-   	   $target_url .= $countdown_name ."/";
+	$target_url= "http://mycountdown.org/$group/";
+   	$target_url .= $countdown ."/";
+	$target_url = str_replace(" ", "_", $target_url);
 
 	$target_url .= $countdown ."/";
 	$group = str_replace(" ", "+", $group);

@@ -3,7 +3,7 @@
 Plugin Name: New Year Countdown Clock
 Description: New Year countdown clock showing days and hours until Christamas day. Select from several designs, sizes, animations and backgrounds 
 Author: enclick
-Version: 1.1
+Version: 1.0
 Author URI: http://mycountdown.org
 Plugin URI: http://mycountdown.org/wordpress-countdown-clock-plugin/
 */

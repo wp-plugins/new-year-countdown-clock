@@ -3,7 +3,7 @@
 Plugin Name: New Year Countdown Clock
 Description: New Year countdown clock showing days and hours until Christamas day. Select from several designs, sizes, animations and backgrounds 
 Author: enclick
-Version: 1.1
+Version: 1.0
 Author URI: http://mycountdown.org
 Plugin URI: http://mycountdown.org/wordpress-countdown-clock-plugin/
 */
@@ -22,8 +22,6 @@ function new_year_countdown_clock_init()
         $newoptions = get_option('new_year_countdown_clock');
     	$options = $newoptions;
 	$options_flag=0;
-
-	//	$group_list[$group_name]['group_code']
 
 	$file_location = dirname(__FILE__)."/group_list.ser"; 
 	if ($fd = fopen($file_location,'r')){
@@ -237,10 +235,8 @@ print "<br> TZ: " . $timezone;
 	//	Title header option	
 	if($countdown)
 		$title = UCWords($countdown) . " Countdown";
-	elseif($countdown_name)
-		$title = $countdown_name . " Countdown";
-	elseif($group_name)
-		$title = $group_name . " Countdown";
+	elseif($group)
+		$title = $group . " Countdown";
 
         echo '<label for="new-year-countdown-clock-title"> <input type="hidden" id="new-year-countdown-clock-title" name="new-year-countdown-clock-title" value="'.$title.'" /> </label>';
 
@@ -321,9 +317,9 @@ print "<br> TZ: " . $timezone;
 	// Output Clock
 
 
-	$target_url= "http://mycountdown.org/$group_name/";
-	if ($countdown_name)
-   	   $target_url .= $countdown_name ."/";
+	$target_url= "http://mycountdown.org/$group/";
+   	$target_url .= $countdown ."/";
+	$target_url = str_replace(" ", "_", $target_url);
 
 	$target_url .= $countdown ."/";
 	$group = str_replace(" ", "+", $group);

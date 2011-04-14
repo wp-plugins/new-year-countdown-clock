@@ -21,6 +21,7 @@ New Year countdown clock showing days and hours until New Year day. Select from 
 3. Go to Plugins > Installed, and activate the plugin,
 4. Go to Appearance > Widgets, and drag the widget to a sidebar,
 5. Select the countdown type, size, colors, or background from the setting menu
+6. Please rate our plugin!
 
 == Screenshots ==
 
@@ -49,3 +50,6 @@ Yes, choose your time zone from timezone drop down in the admin panel
 
 = Is there support  ? = 
 Further support is available at [mycountdown.org/support](http://mycountdown.org/wordpress-countdown-clock-plugin/) 
+
+= Email & Twitter = 
+Email us to widgets at mycountdown.org or [twitter.com/mycountdown](http://twitter.com/mycountdown)

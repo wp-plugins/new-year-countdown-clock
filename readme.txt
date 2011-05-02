@@ -49,6 +49,9 @@ Go to the Appearance->Widgets tab in your wordpress admin panel, and click on se
 = Can I set the time of day and world timezone for the event ? =
 Yes, choose your time zone from timezone drop down in the admin panel
 
+= Can I put a countdown directly into the page? =
+Yes, the javascript is available directly from [mycountdown.org](http://mycountdown.org/Holiday/New_Year/getwidget/ "Generate your own New Year Countdown Clocks"). You must paste the javascript into the page, blog entry or template, in HTML mode.
+
 = Is there support  ? = 
 Further support is available at [mycountdown.org/support](http://mycountdown.org/wordpress-countdown-clock-plugin/) 
 

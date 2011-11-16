@@ -45,6 +45,7 @@ function new_year_countdown_clock_init()
 			$newoptions = array(
 				'title'=>'New Year Countdown',
 				'transparentflag'=>'0', 
+				'titleflag'=>'0', 
 				'group' => 'Holiday',
 				'countdown' => 'New Year',
 				'text1' => '',
@@ -112,7 +113,7 @@ function new_year_countdown_clock_init()
       	$background_color = htmlspecialchars($options['background_color'], ENT_QUOTES);
       	$timezone = htmlspecialchars($options['timezone'], ENT_QUOTES);
 
-      	echo '<ul><li style="text-align:center;list-style: none;"><label for="new-year-countdown-clock-title">New Year Countdown Clock</label></li>';
+      	echo '<ul>';
 
        	// Get group
 

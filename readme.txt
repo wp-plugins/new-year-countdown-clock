@@ -2,7 +2,7 @@
 Contributors: enclick
 Donate link: http://www.mycountdown.org/Holiday/New Year/
 Tags: new year, new year countdown, flash new year countdown, new year countdown clock, new year countdown widget, new year countdown generator, new year countdown ticker, days till new year
-Tested up to: 3.3
+Tested up to: 3.4.2
 Requires at least: 1.5
 Stable tag: 1.0
 
